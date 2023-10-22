@@ -1,0 +1,12 @@
+.home-div{
+    background: gray;
+    height: 91.5vh;
+    width: full;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+}

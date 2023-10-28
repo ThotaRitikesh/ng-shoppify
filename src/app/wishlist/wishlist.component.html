@@ -1,1 +1,13 @@
-<p>wishlist works!</p>
+<div class="container flex">
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    <h1 *ngIf="wishlistItems.length === 0">No Wishlisted Items</h1>
+  </div>
+  <div class="card" style="width: 18rem" *ngFor="let product of wishlistItems">
+    <img src="{{ product.image }}" class="card-img-top" alt="loading img" />
+    <div class="card-body">
+      <h5 class="card-title">{{ product.title }}</h5>
+      <p class="card-text">{{ product.description }}</p>
+      <h6 class="card-title">Price-{{ product.price }}</h6>
+    </div>
+  </div>
+</div>

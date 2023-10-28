@@ -8,7 +8,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
-import { RouterModule } from '@angular/router';
 import {HttpClientModule } from '@angular/common/http';
 import { ViewMoreComponent } from './view-more/view-more.component';
 
@@ -26,11 +25,6 @@ import { ViewMoreComponent } from './view-more/view-more.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      {path: '', component: HomeComponent},
-      {path: 'products', component: ProductsComponent},
-      {path: 'wishlist', component: WishlistComponent},
-    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
